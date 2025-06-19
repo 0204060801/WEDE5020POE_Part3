@@ -1,0 +1,285 @@
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #79a9a9;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 15px;
+  }
+  
+  nav a.active {
+    background-color: #266577;
+    color: white;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 600px) {
+    nav a {
+      float: none;
+      display: block;
+      text-align: left;
+      padding: 12px 16px;
+    }
+  
+    nav {
+      border-radius: 0;
+      max-width: 100%;
+    }
+  }
+
+/* Style for the links */
+nav ul li a {
+    display: block; /* Make the link fill the list item */
+    color: rgb(30, 227, 201); /* Text color */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Padding for spacing */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Change color on hover */
+nav ul li a:hover {
+    background-color: #0b0b0b; /* Darker background on hover */
+}
+
+/* Active link style */
+nav ul li a.active {
+    background-color: #10e010; /* Green background for active link */
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h1{
+      text-align: left;
+      font-size: xxx-large;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h2{
+    font-size: xx-large; /*Extra-extra large font to read properly*/
+  }
+  
+    .active {
+      background-color: #15e7a1;
+    }
+  /* Responsive adjustments */
+
+    
+    
+    
+  body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('Pictures/MotherlandEatery110.jpg'); /*Background image 
+    of the business*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;/*Image must not repeat; must fit in one page*/
+    background-attachment: fixed;
+    color: rgb(7, 7, 7);
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+p{
+  font-size: x-large; /*Larger text for clearer reading*/
+}
+
+
+  
+
+
+
+
+
+
+
+  .signup-container {
+    padding: 64px 56px 72px; /* Increased padding for a bigger box */
+    max-width: 600px; /* Wider max width */
+    border-radius: 24px;
+    /* other styles remain unchanged */
+  }
+  h1 {
+    font-size:xx-large; /* Larger heading */
+    margin-bottom: 36px;
+  }
+  label {
+    font-size: 1.3rem; /* Larger label text */
+  }
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    padding: 20px 24px; /* Larger inputs */
+    font-size: 1.4rem; /* Bigger input text */
+    border-radius: 20px;
+    background-color: #060606;
+  }
+  button[type='submit'] {
+    padding: 22px 0; /* Bigger button */
+    font-size: 1.5rem; /* Larger button text */
+    border-radius: 20px;
+    background-color: #16e6e684; /*Different color for uniqueness*/
+  }
+
+  
+
+
+  .current-time {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.clock-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+
+.current-time {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.clock-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: #060606;
+    margin-bottom: 30px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: rgb(88, 136, 135);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.product-name {
+font-weight: bold;
+font-size: 18px;
+}
+
+.product-price {
+color: #2e7d32;
+font-weight: bold;
+}
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.quantity-btn {
+  background: #f0f0f0;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background: #e0e0e0;
+}
+
+.quantity-value {
+  margin: 0 10px;
+  font-size: 16px;
+}
+padding::after
+
+
+
+
+.totals {
+font-weight: bold;
+font-size: 18px;
+margin-top: 20px;
+padding-top: 20px;
+border-top: 2px solid #eee;
+}
+
+.checkout-btn {
+width: 100%;
+padding: 15px;
+background: #2196F3;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+margin-top: 20px;
+}
+
+.checkout-btn:hover {
+background: #0b7dda;
+}
+
+
+.thank-you-message {
+  display: none;
+  padding: 20px;
+}
+    
+.thank-you-message h2 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.thank-you-message p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.success-icon {
+  font-size: 48px;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
