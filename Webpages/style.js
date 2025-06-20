@@ -36,18 +36,7 @@ for (let index = 0; index < array.length; index++) {
 
   const element = array[index];
 }
-  const form = document.getElementById('loginForm');
-              const emailInput = form.email;
-              const passwordInput = form.password;
-              const emailError = document.getElementById('emailError');
-              const passwordError = document.getElementById('passwordError');
-              const toast = document.getElementById('toast');
-            
-              function validateEmail(email) {
-                // Simplistic email validation regex
-                const re = /^[\\w-.]+@[\\w-]+\\.[\\w-.]+$/;
-                return re.test(email.toLowerCase());
-              }
+  
             
               function showError(input, message) {
                 const errorDiv = input.nextElementSibling;
@@ -75,10 +64,10 @@ for (let index = 0; index < array.length; index++) {
                 // Email validation
                 const emailVal = emailInput.value.trim();
                 if (!emailVal) {
-                  showError(emailInput, 'Email is required.');
+                  showError(emailInput, 'Email is required.');//User must enter an email address
                   valid = false;
                 } else if (!validateEmail(emailVal)) {
-                  showError(emailInput, 'Please enter a valid email address.');
+                  showError(emailInput, 'Please enter a valid email address.');//User's password must have @
                   valid = false;
                 } else {
                   clearError(emailInput);
@@ -87,10 +76,10 @@ for (let index = 0; index < array.length; index++) {
                 // Password validation
                 const pwdVal = passwordInput.value;
                 if (!pwdVal) {
-                  showError(passwordInput, 'Password is required.');
+                  showError(passwordInput, 'Password is required.');//User must eneter a password
                   valid = false;
                 } else if (pwdVal.length < 8) {
-                  showError(passwordInput, 'Password must be at least 8 characters.');
+                  showError(passwordInput, 'Password must be at least 8 characters.');//Password of user must be at least 8 characters
                   valid = false;
                 } else {
                   clearError(passwordInput);
@@ -197,9 +186,21 @@ for (let index = 0; index < array.length; index++) {
     let totalAmount = 0;
     
     
+//This is the dynamic footer year
+document.addEventListener("DOMContentLoaded", function() {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    const currentYear = newDate().getFullYear();
+    yearSpan.textContent = currentYear;
+  }
+});
 
 
 
 
-   
+
+
+
+
+
   

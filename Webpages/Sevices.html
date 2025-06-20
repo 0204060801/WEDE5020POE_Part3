@@ -6,7 +6,7 @@
     <title>Services</title>
 
     <link rel = "stylesheet" href = "style.css"><!--This is a link that connects the Services page with the cascading style sheet-->
-    <link rel = "javascript" href = "style.js"><!--This is a link that connects the Services page with javascript-->
+
     
 
 </head>
@@ -20,7 +20,7 @@
             <a href = "About us.html">About us</a>
             <a href = "Sevices.html">Services</a> 
             <a href = "Contact us.html">Contact</a>
-            <a href = "Signup.html">Sign up</a>
+            <a href = "Enquire.html">Enquire</a>
             <!--This is the navigation bar-->
         </nav>
 <p><h1>Products</h1></p>
@@ -28,112 +28,46 @@
 <h2>Budget Meals</h2>
 <input type = "checkbox" id = "bm1_1" class = "budgetmeal1" Polony>
 <img src = "../Webpages/Pictures/Pictures/BudgetMeals (1).jpg"
-weight = "200" Height = "400">
+weight = "300" Height = "400">
 
 <h2>Fries</h2>
 <img src = "../Webpages/Pictures/Pictures/Fries.jpg" 
-weight = "200" Height = "300">
+weight = "300" Height = "300">
 
 <h2>Skhambani</h2>
 <img src = "../Webpages/Pictures/Pictures/Skhambani2.jpg"
-weight = "200" height = "400">
+weight = "500" height = "600">
 
 <h2>Breakfast</h2>
 <img src = "../Webpages/Pictures/Pictures/Breakfast.jpg"
-weight = "200" height = "100">
+weight = "300" height = "100">
 
 <h2>Toasted Sandwiches + Chips</h2>
 <img src = "../Webpages/Pictures/Pictures/ToastedSandwichesWithChips.jpg"
-weight = "200" height = "300">
+weight = "300" height = "500">
 
 <h2>Main Meals</h2>
 <img src = "../Webpages/Pictures/Pictures/MainMeals.jpg"
-weight = "200" height = "300">
+weight = "300" height = "400">
 <br/>
 <br/>
 <h2>Toasted Sandwiches-No chips</h2>
 <img src = "../Webpages/Pictures/Pictures/ToastedSandwichesNoChips.jpg"
-weight = "200" height = "350">
+weight = "300" height = "500">
 
 <h2>Cold Beverages</h2>
 <img src = "../Webpages/Pictures/Pictures/Beverages.jpg"
-weight = "200" height = "350">
+weight = "300" height = "500">
 
 <h2>Sauces</h2>
 <img src = "../Webpages/Pictures/Pictures/Sauces.jpg"
-weight = "200" height = "350">
+weight = "300" height = "500">
 <br/>
 
-<div class="products-container">
-    <!-- Product 1 -->
-    <div class="product-card">
-        <img src="../Webpages/Pictures/Pictures/BudgetMeals (1).jpg" alt="Budget Meal">
-        <div class="product-info">
-            <span class="product-name">Budget Meal</span>
-            <span class="product-price">R25.00</span>
-        </div>
-        <div class="quantity-controls">
-            <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
-            <span class="quantity-value">0</span>
-            <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
-        </div>
-        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
-    </div>
-     <!-- Product 2 -->
-     <div class="product-card">
-        <img src="../Webpages/Pictures/Pictures/Fries.jpg" alt="Fries">
-        <div class="product-info">
-            <span class="product-name">Fries</span>
-            <span class="product-price">R15.00</span>
-        </div>
-        <div class="quantity-controls">
-            <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
-            <span class="quantity-value">0</span>
-            <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
-        </div>
-        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
-    </div>
-     <!-- Product 3 -->
-     <div class="product-card">
-        <img src="../Webpages/Pictures/Pictures/Skhambani2.jpg" alt="Skhambani">
-        <div class="product-info">
-            <span class="product-name">Skhambani</span>
-            <span class="product-price">R20.00</span>
-        </div>
-        <div class="quantity-controls">
-            <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
-            <span class="quantity-value">0</span>
-            <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
-        </div>
-        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
-    </div>
-     <!-- Product 4 -->
-     <div class="product-card">
-        <img src="../Webpages/Pictures/Pictures/Breakfast.jpg" alt="Breakfast">
-        <div class="product-info">
-            <span class="product-name">Breakfast</span>
-            <span class="product-price">R30.00</span>
-        </div>
-        <div class="quantity-controls">
-            <button class="quantity-btn minus" onclick="adjustQuantity(this, -1)">-</button>
-            <span class="quantity-value">0</span>
-            <button class="quantity-btn plus" onclick="adjustQuantity(this, 1)">+</button>
-        </div>
-        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
-    </div>
-</div>
-<div class="cart-summary">
-    <h2>Your Cart</h2>
-    <div class="cart-items" id="cartItems">
-        <!-- Cart items will be added here dynamically -->
-        <p>Your cart is empty</p>
-    </div>
-    <div class="totals">
-        <div>Total Quantity: <span id="totalQuantity">0</span></div>
-        <div>Total Amount: R<span id="totalAmount">0.00</span></div>
-    </div>
-    <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
-</div>
+<link rel = "javascript" href = "style.js">
+<footer>
+    &copy;2025 Motherland Eatery. All rights reserved.
+</footer>
 
 </body>
 
